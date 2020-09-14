@@ -3,9 +3,9 @@
 #include <time.h>
 #include <stdlib.h>
 //#include "combinations.h"
-#include <stdarg.h>
 
-double average(int num,...);
+
+
 
 
 #define DECK 104
@@ -24,14 +24,20 @@ void print_player1();
 void print_player2();
 void flop();
 
+
+//  ----------------------  C O M B I N A T I O N S --------------------------
 typedef struct{
     unsigned char combination[30];
     unsigned char value[10];
     int points;
 } combination_value;
 
+
 combination_value *p1_combo, *p2_combo, *max_combo;
 void allocate_combo();
+#include <stdarg.h>
+int score_combination(int num,...);
+// int score_card_value(int num,...);
 
 
 

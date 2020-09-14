@@ -78,7 +78,7 @@ int main(){
     
     print_player2();
 
-    printf("%f", average(2, 3, 5));
+    printf("%d", score_combination(3, 7, 8, 9));
 
 
 
